@@ -1,0 +1,79 @@
+---
+title: "my_pres"
+author: "mm"
+bibliography: [my1.bib, ds-h23.bib, my-DS-h23.bib]
+format:
+  revealjs:
+    Theme: simple
+    reveal_options:
+    code-fold: true
+    incremental: true
+    smaller: true
+    scrollable: true
+  pptx: 
+    incremental: true
+    fig-asp: 0.7
+    fig-width: 12
+  beamer: 
+    incremental: true
+    aspectratio: 1610
+    navigation: horizontal
+    theme: Bergen
+editor: visual
+echo: true
+language: nb.yaml
+---
+
+```{r}
+#| label: setup
+#| output: false
+#| message: false
+library(tidyverse)
+```
+
+## Quarto
+
+Quarto enables you to weave together content and executable code into a finished presentation.
+To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+@knuth1992 @babri2020
+
+## Bullets
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Code
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code.
+You can embed code like this:
+
+```{r}
+1 + 1
+```
+
+## More code
+
+refferanse - info for pakker brukt:
+
+## Plot
+
+Slik lager vi plot
+
+```{r}
+#| label: fig-biler
+#| fig-cap: Flott plot av bilers bremselengde
+#| fig-cap-location: bottom
+plot(cars)
+```
+
+I @fig-biler er det et flott plot av fart og bremselengde.
+
+![Bilde](images/Skjermbilde%202023-08-31%20134230.png){fig-align="center"}
+
+## Refferanseliste
+
+::: {#refs}
+:::
